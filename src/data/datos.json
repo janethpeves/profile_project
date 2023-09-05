@@ -1,4 +1,11 @@
 {
-    "name":"Enrique Cárdenas Cabrera",
-    "cargo": "CEO Chief Executive Officer"
+	"name": "Enrique",
+	"lastname": "Cárdenas Cabrera",
+	"description": "CEO Chief Executive Officer",
+	"email": "ecardenas@sempiterno-group.com",
+	"phone": "+51987714518",
+	"urlWeb": "https://sempiterno-group.lat/",
+	"urlTel": "#",
+	"urlLinkedin": "#",
+	"urlAddress": "#"
 }
