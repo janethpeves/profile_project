@@ -34,6 +34,15 @@ export const HomePage = () => {
 		window.open(url, "_blank", "noopener,noreferrer");
 	};
 
+	const handleSaveContact = () => {
+		console.log(newLead);
+		setNewLead({
+			name: "",
+			phone: "",
+		});
+		setModalVisible(false);
+	};
+
 	return (
 		<>
 			<div className={style.section__container}>
@@ -64,7 +73,7 @@ export const HomePage = () => {
 						<a href={data.urlTel} target="_blank" rel="noopener noreferrer">
 							<BsFillTelephoneFill size={25} color="#D43371" />
 						</a>
-						<a href={data.urlWeb} target="_blank" rel="noopener noreferrer">
+						<a href={data.urlLinkedin} target="_blank" rel="noopener noreferrer">
 							<AiFillLinkedin size={35} color="#D43371" />
 						</a>
 						<a href={data.urlAddress} target="_blank" rel="noopener noreferrer">
@@ -88,7 +97,7 @@ export const HomePage = () => {
 							className={style.form__input}
 							name="name"
 							value={newLead.name}
-							placeholder={`Ejm: ${data.name}`}
+							placeholder={`Ejm: Eduardo Chavez`}
 							autoComplete="off"
 							onChange={(e) => handleChangeInput(e)}
 						/>
@@ -107,7 +116,7 @@ export const HomePage = () => {
 						/>
 					</div>
 
-					<Button text="Enviar / Send" scaleOff={true} onClick={() => console.log(newLead)} />
+					<Button text="Enviar / Send" scaleOff={true} onClick={() => handleSaveContact()} />
 				</div>
 			</Dialog>
 		</>
